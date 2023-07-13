@@ -6,6 +6,11 @@
   <title>Young's Portfolio</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/merge-one" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/acbec71f3c.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-1.11.2.min.js"></script>
 </head>
 <body>
   <header>
@@ -14,29 +19,34 @@
         <a href="index.html"><img src="img/logo.png" alt="logo"></a>
       </h1>
       <ul class="menu">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>About</li>
+        <li class="home">
+          Home
+          <div class="underline"></div>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+          <div class="underline"></div>
+        </li>
+        <li>
+          <a href="#about">About</a>
+          <div class="underline"></div>
+        </li>
       </ul>
     </nav>
-    <h1 class="intro">
-      <div class="first">Welcome to</div>
-      <div class="second">Young's Portfolio. :)</div>
-    </h1>
-    <div class="bg">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- intro typing 효과 -->
+    <div class="typing-txt">
+      <ul>
+        <li>Welcome to</li>
+        <li>Young's Portfolio. :)</li>
+      </ul>
     </div>
+    <div class="typing">
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <img src="img/icon/scroll-down.png" alt="scroll-down" class="scroll">
   </header>
   <section id="projects">
     <div class="title">
@@ -44,126 +54,191 @@
       <div class="projects_under"></div>
     </div>
     <div class="cont">
-      <img src="img/renewal.png" alt="renewal" class="sticker">
-      <h2><img src="img/kiehls_logo.png" alt="kiehls_logo"></h2>
-      <div class="info">
-        <div class="img">
-          <img src="img/kiehls_mo.png" alt="kiehls_mo">
-          <img src="img/kiehls_mo1.png" alt="kiehls_mo1">
-          <img src="img/kiehls_mo2.png" alt="kiehls_mo2">
+      <div class="abs img">
+        <div class="shine">
+          <h1><img src="img/kiehls_logo.png" alt="kiehls_logo"></h1>
+          <img src="img/kiehls.png" alt="kiehls" class="elec">
         </div>
-        <div class="txt">
-          <h3>Type</h3>
-          <p>Mobile Web Page (1인 프로젝트)</p>
-          <h3>제작 페이지</h3>
-          <p>Main / Sub 5</p>
-          <p class="sub">(로그인, 회원가입, BEST, 상품 상세 페이지,<span>서브 배너 기획전 페이지)</span></p>
-          <h3 class="tool">#HTML #CSS #JQUERY<span>#FIGMA #PHOTOSHOP</span></h3>
-        </div>
+        <img src="img/renewal.png" alt="renewal" class="sticker">
       </div>
-      <div class="btn kiehls_btn">
-        <button>GUIDE ></button>
-        <button>BEFORE ></button>
-        <button>AFTER ></button>
-      </div>
-    </div>
-    <div class="cont">
-      <img src="img/renewal.png" alt="renewal" class="sticker">
-      <h2><img src="img/nest_logo.png" alt="nest_logo"></h2>
-      <div class="info">
-        <div class="img">
-          <img src="img/nest_mo.png" alt="nest_mo">
-          <img src="img/nest_pc.png" alt="nest_pc">
-          <img src="img/nest_tab.png" alt="nest_tab">
+      <div class="abs txt">
+        <h3>Type</h3>
+        <p>Mobile Web Page</p>
+        <h3>참여도</h3>
+        <p>1인 프로젝트</p>
+        <h3>제작 페이지</h3>
+        <p>Main / Sub 5 <br>
+          <span class="sub">
+            (로그인, 회원가입, BEST, 상품 상세 페이지, 서브 배너 기획전 페이지)
+          </span>
+        </p>
+        <h4 class="tool">
+          #HTML #CSS #JQUERY
+          <span>#FIGMA #PHOTOSHOP</span>
+        </h4>
+        <div class="btn kiehls_btn">
+          <a href="http://tpqnjenny97.dothome.co.kr/Kiehls/guide.html" target="_blank">
+            <button>GUIDE ></button>
+          </a>
+          <a href="http://tpqnjenny97.dothome.co.kr/Kiehls/before.html" target="_blank">
+            <button>BEFORE ></button>
+          </a>
+          <a href="https://tpqnjenny.github.io/Kiehls/" target="_blank">
+            <button>AFTER ></button>
+          </a>
         </div>
-        <div class="txt">
-          <h3>Type</h3>
-          <p>Responsive Web Page (1인 프로젝트)</p>
-          <h3>제작 페이지</h3>
-          <p>Main / Sub 3</p>
-          <p class="sub">(로그인, 회원가입, ABOUT > 호텔 소개)</p>
-          <h3 class="tool">#HTML #CSS #JQUERY #PHP<span>#FIGMA</span></h3>
-        </div>
-      </div>
-      <div class="btn nest_btn">
-        <button>GUIDE ></button>
-        <button>BEFORE ></button>
-        <button>AFTER ></button>
       </div>
     </div>
     <div class="cont">
-      <img src="img/renewal.png" alt="renewal" class="sticker">
-      <h2><img src="img/nintendo_logo.png" alt="nintendo_logo"></h2>
-      <div class="info">
-        <div class="img">
-          <img src="img/nintendo_pc.png" alt="nintendo_pc">
+      <div class="abs img">
+        <div class="shine">
+          <h1><img src="img/nest_logo.png" alt="nest_logo"></h1>
+          <img src="img/nest.png" alt="nest" class="elec">
         </div>
-        <div class="txt">
-          <h3>Type</h3>
-          <p>PC Web Page (팀 프로젝트)</p>
-          <h3>제작 페이지</h3>
-          <p>Main / Sub 5</p>
-          <p class="sub">(로그인&회원가입, 마리오, 커비, 포켓몬, 동물의 숲)</p>
-          <h3 class="tool">#HTML #CSS #JAVASCRIPT #JQUERY #PHP<span>#FIGMA #PHOTOSHOP</span></h3>
-        </div>
+        <img src="img/renewal.png" alt="renewal" class="sticker">
       </div>
-      <div class="btn nintendo_btn">
-        <button>GUIDE ></button>
-        <button>BEFORE ></button>
-        <button>AFTER ></button>
+      <div class="abs txt">
+        <h3>Type</h3>
+        <p>Responsive Web Page</p>
+        <h3>참여도</h3>
+        <p>1인 프로젝트</p>
+        <h3>제작 페이지</h3>
+        <p>Main / Sub 3 <br>
+          <span class="sub">(로그인, 회원가입, ABOUT > 호텔 소개)</span>
+        </p>
+        <h4 class="tool">
+          #HTML #CSS #JQUERY #PHP
+          <span>#FIGMA</span>
+        </h4>
+        <div class="btn nest_btn">
+          <a href="http://tpqnjenny97.dothome.co.kr/NestHotel/guide.html" target="_blank">
+            <button>GUIDE ></button>
+          </a>
+          <a href="http://tpqnjenny97.dothome.co.kr/NestHotel/before.html" target="_blank">
+            <button>BEFORE ></button>
+          </a>
+          <a href="http://tpqnjenny97.dothome.co.kr/NestHotel/index.html" target="_blank">
+            <button>AFTER ></button>
+          </a>
+        </div>
       </div>
     </div>
     <div class="cont">
-      <img src="img/clone.png" alt="clone" class="sticker">
-      <h2><img src="img/jakorea_logo.png" alt="jakorea_logo"></h2>
-      <div class="info">
-        <div class="img">
-          <img src="img/jakorea_pc.png" alt="jakorea_pc">
+      <div class="abs img">
+        <div class="shine">
+          <h1><img src="img/nintendo_logo.png" alt="nintendo_logo"></h1>
+          <img src="img/nintendo.png" alt="nintendo" class="elec">
         </div>
-        <div class="txt">
-          <h3>Type</h3>
-          <p>PC Web Page (1인 프로젝트)</p>
-          <h3>제작 페이지</h3>
-          <p>Main</p>
-          <h3 class="tool">#HTML #CSS</h3>
+        <img src="img/renewal.png" alt="renewal" class="sticker">
+      </div>
+      <div class="abs txt">
+        <h3>Type</h3>
+        <p>PC Web Page</p>
+        <h3>참여도</h3>
+        <p>팀 프로젝트<br>(전 페이지 디자인 및 로그인&회원가입, 동물의 숲 제작)</p>
+        <h3>제작 페이지</h3>
+        <p>Main / Sub 5 <br>
+          <span class="sub">
+            (로그인&회원가입, 마리오, 커비, 포켓몬, 동물의 숲)
+          </span>
+        </p>
+        <h4 class="tool">
+          #HTML #CSS #JAVASCRIPT #JQUERY #PHP
+          <span>#FIGMA #PHOTOSHOP</span>
+        </h4>
+        <div class="btn nintendo_btn">
+          <a href="http://tpqnjenny97.dothome.co.kr/Nintendo/guide.html" target="_blank">
+            <button>GUIDE ></button>
+          </a>
+          <a href="http://tpqnjenny97.dothome.co.kr/Nintendo/before.html" target="_blank">
+            <button>BEFORE ></button>
+          </a>
+          <a href="http://joojea.dothome.co.kr/nintendo/index.html" target="_blank">
+            <button>AFTER ></button>
+          </a>
         </div>
       </div>
-      <div class="btn jakorea_btn">
-        <button>VIEW PAGE ></button>
+    </div>
+    <div class="cont">
+      <div class="abs img">
+        <div class="shine">
+          <h1><img src="img/jakorea_logo.png" alt="jakorea_logo"></h1>
+          <img src="img/jakorea.png" alt="jakorea" class="elec">
+        </div>
+        <img src="img/clone.png" alt="clone" class="sticker">
+      </div>
+      <div class="abs txt">
+        <h3>Type</h3>
+        <p>PC Web Page</p>
+        <h3>참여도</h3>
+        <p>1인 프로젝트</p>
+        <h3>제작 페이지</h3>
+        <p>Main Page</p>
+        <h4 class="tool">#HTML #CSS</h4>
+        <div class="btn jakorea_btn">
+          <a href="https://tpqnjenny.github.io/JAKorea/" target="_blank">
+            <button>VIEW PAGE ></button>
+          </a>
+        </div>
       </div>
     </div>
   </section>
   <section id="about">
-    <div class="title">About</div>
-    <div class="about_under"></div>
-    <div class="top">
-      <img src="img/me.jpg" alt="yeyoung">
-      <h3>안녕하세요, 신입 웹 개발자 김이영입니다. :)</h3>
-      <h3>활동적인 것을 좋아하고 호기심이 많아<span>끊임없이 연구하고 발전합니다.</span></h3>
+    <div class="title">
+      <p>About</p>
+      <div class="about_under"></div>
     </div>
-    <div class="bottom">
-      <div class="left">
-        <div class="subtitle">Skills</div>
-        <div class="skills_under"></div>
-        <img src="img/icon/html.png" alt="html">
-        <img src="img/icon/css.png" alt="css">
-        <img src="img/icon/js.png" alt="js">
-        <img src="img/icon/query.png" alt="query">
-        <img src="img/icon/react.png" alt="react">
-        <div class="subtitle">Graphics</div>
-        <div class="graphics_under"></div>
-        <img src="img/icon/figma.png" alt="figma">
-        <img src="img/icon/ps.png" alt="ps">
+    <div class="top">
+      <div class="me">
+        <img src="img/me.jpg" alt="yeyoung">
       </div>
-      <div class="right">
-        <div class="subtitle">Contact</div>
-        <div class="contact_under"></div>
-        <i class="fa-light fa-mobile-button"></i>
-        <a href="tel:010-9048-3772">010-9048-3772</a>
-        <i class="fa-light fa-envelope"></i>
-        <a href="mailto:tpqnjenny@naver.com">tpqnjenny@naver.com</a>
-        <i class="fa-brands fa-git-alt"></i>
-        <a href="https://github.com/tpqnjenny">https://github.com/tpqnjenny</a>
+      <div class="education">
+        <div class="subtitle">
+          <p>Education</p>
+          <div class="sub_under"></div>
+        </div>
+        <ul class="edu">
+          <li>2022.11.14 ~ 12.15 웹퍼블리싱(Html,CSS3) - 수료</li>
+          <li>2023.02.06 ~ 08.10 UI/UX디자인 웹퍼블리셔&프론트엔드 IT개발자 - 진행중</li>
+          <li>2023.05.10 ~ 06.07 디지털역량 제고를 위한 다이나믹 클라이언트 사이드 스크립트 기초 - 수료</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <div class="subtitle">
+          <p>Contact</p>
+          <div class="sub_under"></div>
+        </div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-mobile-button"></i>
+            <a href="tel:010-9048-3772">010-9048-3772</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:tpqnjenny@naver.com">tpqnjenny@naver.com</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/tpqnjenny">https://github.com/tpqnjenny</a>
+          </li>
+        </ul>
+      </div>
+      <div id="skills">
+        <ul class="skills">
+          <div class="toggle">
+            <p>Skills</p>
+            <div class="skills_under"></div>
+          </div>
+          <li style="--i:0;"><a href="#"><img src="img/icon/html.png" alt="html" title="html5"></a></li>
+          <li style="--i:1;"><a href="#"><img src="img/icon/css.png" alt="css" title="css3"></a></li>
+          <li style="--i:2;"><a href="#"><img src="img/icon/js.png" alt="js" title="javascript"></a></li>
+          <li style="--i:3;"><a href="#"><img src="img/icon/jquery.png" alt="jquery" title="jquery"></a></li>
+          <li style="--i:4;"><a href="#"><img src="img/icon/php.png" alt="php" title="php"></a></li>
+          <li style="--i:5;"><a href="#"><img src="img/icon/react.png" alt="react" title="react"></a></li>
+          <li style="--i:6;"><a href="#"><img src="img/icon/github.png" alt="github" title="github"></a></li>
+          <li style="--i:7;"><a href="#"><img src="img/icon/figma.png" alt="figma" title="figma"></a></li>
+          <li style="--i:8;"><a href="#"><img src="img/icon/ps.png" alt="photoshop" title="photoshop"></a></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -171,5 +246,10 @@
     <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오 목적으로 제작 되었습니다.</p>
     <p>&copy; 2023 YeYoung Kim All rights reserved.</p>
   </footer>
+  <div class="cursormove">
+    <img src="img/emoji.png" alt="cursor">
+  </div>
+  <script src="js/index.js"></script>
+  <script src="js/mousemove.js"></script>
 </body>
 </html>
