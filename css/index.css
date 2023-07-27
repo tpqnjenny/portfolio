@@ -13,7 +13,7 @@ body {
   cursor: default;
   overflow-x: hidden;
   color: #24232f;
-  font-family: 'Merge One', sans-serif;
+  font-family: "Merge One", sans-serif;
   background: linear-gradient(#eef1ff, #d2daff, #aac4ff, #b1b2ff);
   cursor: url(../img/cursor.png), auto;
 }
@@ -62,7 +62,7 @@ header {
   align-items: center;
 }
 .menu li {
-  font-size: 1.7rem;
+  font-size: 1.7em;
   font-weight: bold;
 }
 
@@ -108,8 +108,8 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-family: 'Kaushan Script', sans-serif;
-  font-size: 4rem;
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 4em;
   visibility: hidden;
 }
 .typing {
@@ -118,8 +118,8 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-family: 'Kaushan Script', sans-serif;
-  font-size: 4rem;
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 4em;
 }
 .typing ul li {
   display: block;
@@ -139,7 +139,7 @@ header {
   width: 40px;
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: 9%;
   transform: translateX(-50%);
   text-align: center;
   opacity: 0.8;
@@ -147,7 +147,7 @@ header {
 }
 @keyframes scroll {
   50% {
-    bottom: 2px;
+    bottom: 8%;
   }
 }
 
@@ -163,7 +163,7 @@ header {
   animation: none !important;
 }
 .title p {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
   position: relative;
   z-index: 1;
@@ -208,17 +208,17 @@ header {
   box-shadow: 4px 4px 7px 5px rgba(0, 0, 0, 0.1);
 }
 .img {
-
   background: #e6eaff;
   animation: updown 1s infinite alternate;
 }
-.shine{height: 100%;
+.shine {
+  height: 100%;
   justify-content: space-around;
   align-items: center;
   position: relative;
   overflow: hidden;
 }
-.shine:before{
+.shine:before {
   content: "";
   width: 50%;
   height: 100%;
@@ -226,10 +226,14 @@ header {
   top: 0;
   left: -75%;
   z-index: 2;
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   transform: skew(-25deg);
 }
-.shine:hover:before{
+.shine:hover:before {
   animation: shine 0.75s;
 }
 @keyframes shine {
@@ -263,10 +267,10 @@ header {
 }
 .txt h3 {
   margin-top: 15px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .sub {
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 .tool span {
   display: block;
@@ -276,7 +280,7 @@ header {
   padding: 15px 20px;
   margin: 30px 20px 0;
   border-radius: 25px;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: bold;
   cursor: url(../img/cursor_pointer.png), auto;
   transition: 0.2s;
@@ -302,6 +306,43 @@ header {
   background: #def0f3;
 }
 
+/* STUDIES */
+#studies{
+  width: 80%;
+  margin: 200px auto 100px;;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.study-title p {
+  font-size: 2.5em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.studies_under {
+  height: 15px;
+  transform: translateY(-20px);
+  background: #fd3286;
+  opacity: 0.8;
+}
+.study{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.study li{
+  text-align: center;
+  animation: updown 1s infinite alternate;
+}
+.study li p{
+  white-space: nowrap;
+}
+.study li span{
+  display: block;
+}
+.study img{width: 100px;}
+
 /* ABOUT */
 #about {
   width: 100vw;
@@ -318,7 +359,7 @@ header {
   margin-bottom: 30px;
 }
 .subtitle p {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bold;
   position: relative;
   z-index: 1;
@@ -354,7 +395,7 @@ header {
 }
 .edu li {
   margin: 40px 0;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: bold;
   word-break: keep-all;
 }
@@ -369,7 +410,7 @@ header {
 .contact ul li {
   margin: 40px 0;
   vertical-align: middle;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: bold;
   word-break: keep-all;
 }
@@ -377,7 +418,7 @@ header {
   width: 30px;
   text-align: center;
   vertical-align: middle;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .contact ul li a {
   margin-left: 20px;
@@ -429,7 +470,7 @@ header {
   animation: updown 1s infinite alternate;
 }
 .toggle p {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bold;
   z-index: 1;
 }
@@ -466,7 +507,7 @@ footer {
   margin: 200px 0 50px;
   text-align: center;
   color: #2d2d2d;
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 footer p {
   margin-top: 10px;
