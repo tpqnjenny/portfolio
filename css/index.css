@@ -156,6 +156,7 @@ header {
   width: 100vw;
   text-align: center;
   perspective: 1200px;
+  overflow: hidden;
 }
 .title {
   width: fit-content;
@@ -175,11 +176,19 @@ header {
   opacity: 0.8;
 }
 
+#content{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
 .cont {
-  width: 40vw;
-  height: 60vh;
-  margin: 150px 50px;
-  display: inline-block;
+  width: 700px;
+  height: 50vh;
+  margin: 150px auto;
   position: relative;
   cursor: url(../img/cursor_pointer.png), auto;
   transform-style: preserve-3d;
@@ -311,6 +320,7 @@ header {
   width: 80%;
   margin: 200px auto 100px;;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
