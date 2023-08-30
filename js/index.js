@@ -1,4 +1,19 @@
-// intro typing 효과
+// MENU scroll event
+let prevScrollpos = window.pageYOffset;
+let navi = document.getElementById("navi")
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos < currentScrollPos) {
+    navi.style.opacity = 0;
+    navi.style.transition = "opacity .3s"
+  } else {
+    navi.style.opacity = 1;
+    navi.style.transition = "opacity .3s"
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+// intro typing event
 $(function(){
   var typingBool = false;
   var typingIdx = 0;
@@ -71,4 +86,29 @@ toggle.onclick = function (e) {
 $(".home").click(function () {
   $("html,body").animate({ scrollTop: 0 }, "slow");
   return false;
+});
+
+// top 메뉴
+let gotop = document.getElementById("go-top");
+let scrollAmt;
+
+window.addEventListener("scroll", ()=>{
+  scrollAmt = window.pageYOffset;
+
+  if(scrollAmt > 1000){
+    // top.classList.add("active");
+    gotop.className = "on";
+    // 기존에 className이 있어도 모두 초기화하고 해당 값만 지정
+  } else{
+    gotop.classList.remove("on");
+  }
+});
+
+gotop.addEventListener("click", (e)=>{
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
 });

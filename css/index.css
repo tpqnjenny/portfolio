@@ -410,6 +410,7 @@ header {
   word-break: keep-all;
 }
 .edu li:hover {
+  cursor: url(../img/cursor_pointer.png), auto;
   text-decoration: underline;
 }
 
@@ -533,4 +534,26 @@ footer p {
 }
 .cursormove img {
   width: 40px;
+}
+
+/* GO-TOP btn */
+#go-top {    
+	width: 50px; 
+	height: 50px;   
+	position: fixed; 
+	bottom: 48px; 
+	right: 48px;
+	line-height:50px;
+	text-align:center;
+	color:#fff;
+  border-radius: 10px;
+	background-color:#3d3d3dbb;
+	transition:opacity .5s;
+	opacity: 0;
+}
+
+#go-top.on{
+	opacity: 1;
+	/* visibility: visible; */
+  transition: opacity .5s;
 }
