@@ -154,13 +154,15 @@ header {
 /* PROJECTS */
 #projects {
   width: 100vw;
+  margin: 100px 0;
+  padding-top: 100px;
   text-align: center;
   perspective: 1200px;
   overflow: hidden;
 }
 .title {
   width: fit-content;
-  margin: 200px auto 100px;
+  margin: 0 auto 100px;
   animation: none !important;
 }
 .title p {
@@ -188,7 +190,7 @@ header {
 .cont {
   width: 700px;
   height: 50vh;
-  margin: 150px auto;
+  margin: 100px auto 150px;
   position: relative;
   cursor: url(../img/cursor_pointer.png), auto;
   transform-style: preserve-3d;
@@ -356,6 +358,8 @@ header {
 /* ABOUT */
 #about {
   width: 100vw;
+  margin: 100px 0;
+  padding-top: 100px;
 }
 .about_under {
   height: 15px;
@@ -401,7 +405,7 @@ header {
 }
 
 .education {
-  width: 50%;
+  width: 55%;
 }
 .edu li {
   margin: 40px 0;
@@ -416,7 +420,7 @@ header {
 
 .contact {
   width: 40%;
-  margin: 0 auto;
+  margin: 100px auto 0;
 }
 .contact ul li {
   margin: 40px 0;
