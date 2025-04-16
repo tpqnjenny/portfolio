@@ -7,7 +7,7 @@ window.onscroll = function() {
   navi.style.position = 'fixed';
   navi.style.transform = 'translateX(-50%)';
 
-  if(currentScrollPos == 0){
+  if(currentScrollPos <= 0){
     navi.style.position = 'static';
     navi.style.transform = 'translateX(0)';
   } else {
