@@ -5,14 +5,13 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos < currentScrollPos) {
     navi.style.display = 'none';
-    navi.style.transition = "opacity .3s"
   } else {
     navi.style.display = 'flex';
-    navi.style.transition = "opacity .3s"
   }
   prevScrollpos = currentScrollPos;
 
-  if(prevScrollpos == 0){
+  console.log(currentScrollPos)
+  if(currentScrollPos == 0){
     navi.style.position = 'static';
     navi.style.transform = 'translateX(0)';
   } else{
