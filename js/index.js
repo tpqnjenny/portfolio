@@ -4,10 +4,10 @@ let navi = document.getElementById("navi")
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos < currentScrollPos) {
-    navi.style.opacity = 0;
+    navi.style.display = 'none';
     navi.style.transition = "opacity .3s"
   } else {
-    navi.style.opacity = 1;
+    navi.style.display = 'flex';
     navi.style.transition = "opacity .3s"
   }
   prevScrollpos = currentScrollPos;
