@@ -11,6 +11,14 @@ window.onscroll = function() {
     navi.style.transition = "opacity .3s"
   }
   prevScrollpos = currentScrollPos;
+
+  if(prevScrollpos == 0){
+    navi.style.position = 'static';
+    navi.style.transform = 'translateX(0)';
+  } else{
+    navi.style.position = 'fixed';
+    navi.style.transform = 'translateX(-50%)';
+  }
 }
 
 // intro typing event

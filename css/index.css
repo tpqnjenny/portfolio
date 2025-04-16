@@ -40,9 +40,9 @@ header {
   padding: 0 100px;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: static;
   left: 50%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   top: 0;
   box-sizing: border-box;
   z-index: 99;
