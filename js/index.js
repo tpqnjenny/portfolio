@@ -3,20 +3,23 @@ let prevScrollpos = window.pageYOffset;
 let navi = document.getElementById("navi")
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos < currentScrollPos) {
-    navi.style.display = 'none';
-  } else {
-    navi.style.display = 'flex';
-  }
-  prevScrollpos = currentScrollPos;
 
-  console.log(currentScrollPos)
+  navi.style.position = 'fixed';
+  navi.style.transform = 'translateX(-50%)';
+
   if(currentScrollPos == 0){
     navi.style.position = 'static';
     navi.style.transform = 'translateX(0)';
-  } else{
+  } else {
     navi.style.position = 'fixed';
     navi.style.transform = 'translateX(-50%)';
+
+    if (prevScrollpos < currentScrollPos) {
+      navi.style.display = 'none';
+    } else {
+      navi.style.display = 'flex';
+    }
+    prevScrollpos = currentScrollPos;
   }
 }
 
